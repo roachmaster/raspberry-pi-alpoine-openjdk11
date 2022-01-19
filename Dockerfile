@@ -5,6 +5,6 @@ RUN apk update \
   && apk add ca-certificates \
   && update-ca-certificates \
   && apk add --update coreutils && rm -rf /var/cache/apk/* \
-  && apk --no-cache add openjdk11 tzdata curl unzip bash --repository=http://dl-cdn.alpinelinux.org/alpine/edge/community \
+  && apk --no-cache add openjdk11 tzdata curl unzip bash \
   && apk add --no-cache nss \
   && rm -rf /var/cache/apk/*
