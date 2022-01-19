@@ -1,7 +1,7 @@
-FROM alpine:latest
+FROM alpine:3.15.0
 
 RUN  apk update \
-  && apk upgrade \
+  && apk upgrade 
 #  && apk add ca-certificates \
 #  && apk update-ca-certificates \
 #  && apk add --update coreutils && rm -rf /var/cache/apk/*   \
